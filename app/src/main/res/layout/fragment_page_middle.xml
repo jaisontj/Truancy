@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:id="@+id/middle_mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/middle_titleBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/button_middle_subjectList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="#00000000"
+                android:text="+"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/middle_title"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8"
+                android:gravity="center"
+                android:text="OVER ALL"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/button_middle_settings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@drawable/ic_action_settings" />
+
+            <Button
+                android:id="@+id/button_middle_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="#00000000"
+                android:text="Done"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_weight="0.9"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/totalAttendance"
+                android:layout_width="match_parent"
+                android:layout_height="0sp"
+                android:layout_weight="0.3"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/button_middle_attendancePercent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#00000000"
+                    android:text="100"
+                    android:textColor="#FFFFFF"
+                    android:textSize="50dp" />
+
+                <TextView
+                    android:id="@+id/tv_middle_attendacePercent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Attendance Percentage"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/middleBox"
+                android:layout_width="match_parent"
+                android:layout_height="0sp"
+                android:layout_margin="10dp"
+                android:layout_weight="0.6"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/middleBox_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/main_page_box"
+                    android:visibility="gone" >
+
+                    <LinearLayout
+                        android:id="@+id/middle_line1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="15dp"
+                        android:gravity="center" >
+
+                        <Button
+                            android:id="@+id/button_middle_classesBunked"
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.3"
+                            android:background="#00000000"
+                            android:text="100" />
+
+                        <TextView
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.05"
+                            android:text="+"
+                            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                        <Button
+                            android:id="@+id/button_middle_classesAttended"
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.3"
+                            android:background="#00000000"
+                            android:text="100" />
+
+                        <TextView
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.05"
+                            android:text="="
+                            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                        <Button
+                            android:id="@+id/button_middle_classesHeld"
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.3"
+                            android:background="#00000000"
+                            android:text="200" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/middle_line2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/middle_line1"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:gravity="center" >
+
+                        <TextView
+                            android:id="@+id/tv_middle_classesBunked"
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.33"
+                            android:gravity="center"
+                            android:text="Bunked" />
+
+                        <TextView
+                            android:id="@+id/tv_middle_classesAttended"
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.33"
+                            android:gravity="center"
+                            android:text="Attended" />
+
+                        <TextView
+                            android:id="@+id/tv_middle_classesHeld"
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.33"
+                            android:gravity="center"
+                            android:text="Classes Held" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/bunkLeft"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/button_edit"
+                        android:layout_below="@+id/middle_line2"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/tv_middle_bunksLeft"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="You have 100 bunks left." />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/button_edit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/button_edit"
+                        android:gravity="center_vertical" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/middleBox_settings"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <LinearLayout
+                        android:id="@+id/settings_sub_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/plain_box_bg"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/tv_settings_sub_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="NOTIFICATIONS"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="#a09c9c" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/settings_body"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/main_page_box"
+                        android:orientation="vertical" >
+
+                        <com.OutSideTheByte.truancy.CustomViewPager
+                            android:id="@+id/Vpager2"
+                            android:layout_width="match_parent"
+                            android:layout_height="0sp"
+                            android:layout_weight="0.9"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp" >
+                        </com.OutSideTheByte.truancy.CustomViewPager>
+
+                        <LinearLayout
+                            android:id="@+id/settings_body_bottomBar"
+                            android:layout_width="match_parent"
+                            android:layout_height="0sp"
+                            android:layout_margin="5dp"
+                            android:layout_weight="0.1"
+                            android:gravity="center"
+                            android:orientation="horizontal" >
+
+                            <Button
+                                android:id="@+id/button_settings1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="#00000000"
+                                android:text="1" />
+
+                            <Button
+                                android:id="@+id/button_settings2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="#00000000"
+                                android:text="2" />
+
+                            <Button
+                                android:id="@+id/button_settings3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="#00000000"
+                                android:text="3" />
+
+                            <Button
+                                android:id="@+id/button_settings4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="#00000000"
+                                android:text="4" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ScrollView
+                    android:id="@+id/middleBox_subjects"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" >
+
+                    <LinearLayout
+                        android:id="@+id/middleBox_subjects_entrySpace"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+                    </LinearLayout>
+                </ScrollView>
+
+                <RelativeLayout
+                    android:id="@+id/middleBox_editMain"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/main_page_box" >
+
+                    <Button
+                        android:id="@+id/button_doneEdit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/button_edit"
+                        android:gravity="center_vertical" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:orientation="horizontal" 
+                        android:layout_marginTop="15dp">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:gravity="center"
+                            android:orientation="vertical" >
+
+                            <Button
+                                android:id="@+id/button_addBunked"
+                                style="?android:attr/buttonBarButtonStyle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="+" />
+
+                            <TextView
+                                android:id="@+id/tv_bunkedValue"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="#00000000"
+                                android:text="Button" />
+
+                            <Button
+                                android:id="@+id/button_subBunked"
+                                style="?android:attr/buttonBarButtonStyle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="-" />
+
+                            <TextView
+                                android:id="@+id/tv_bunked"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Bunked" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:gravity="center"
+                            android:orientation="vertical" >
+
+                            <Button
+                                android:id="@+id/button_addAttended"
+                                style="?android:attr/buttonBarButtonStyle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="+" />
+
+                            <TextView
+                                android:id="@+id/tv_attendedValue"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="#00000000"
+                                android:text="Button" />
+
+                            <Button
+                                android:id="@+id/button_subAttended"
+                                style="?android:attr/buttonBarButtonStyle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="-" />
+
+                            <TextView
+                                android:id="@+id/tv_attended"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Attended" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

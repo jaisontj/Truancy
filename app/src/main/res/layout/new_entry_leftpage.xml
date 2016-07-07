@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="12dp"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal" >
+
+    <Button
+        android:id="@+id/button_left_date"
+        android:layout_width="0sp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.4"
+        android:background="#00000000"
+        android:ellipsize="marquee"
+        android:lines="1" />
+
+    <Button
+        android:id="@+id/button_left_time"
+        android:layout_width="0sp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.3"
+        android:background="#00000000"
+        android:ellipsize="marquee"
+        android:lines="1" />
+
+    <Button
+        android:id="@+id/button_left_subjectName"
+        android:layout_width="0sp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.3"
+        android:background="#00000000"
+        android:ellipsize="marquee"
+        android:lines="1" />
+
+    <Button
+        android:id="@+id/button_left_bunk"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_bunk"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/button_left_attend"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_attend"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/button_left_holiday"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_holiday"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/id_entryLeftPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:visibility="gone" />
+
+</LinearLayout>

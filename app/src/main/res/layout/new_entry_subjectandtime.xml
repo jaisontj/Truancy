@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@drawable/plain_box_bg" >
+
+    <Button
+        android:id="@+id/button_subjectName"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="0sp"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_weight="0.5"
+        android:hint="Subject" />
+
+    <TextView
+        android:layout_width="0sp"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_weight="0.05"
+        android:text=":"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/button_time"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="0sp"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_weight="0.3"
+        android:hint="Time" />
+
+    <Button
+        android:id="@+id/button_delete"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="0sp"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_weight="0.15"
+        android:text="X" />
+
+</LinearLayout>
